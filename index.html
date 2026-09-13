@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <title>Cloud Services Assignment 3</title>
+
+        <link rel="stylesheet" href="style.css" />
+    </head>
+
+    <body>
+
+        <header>
+            <h1>Cloud Services - Assignment 3</h1>
+            <p>By: Marko Pomahac</p>
+        </header>
+
+        <main>
+
+            <div class="tab-navbar">
+                <button class="main-tab active"
+                        type="button"
+                        data-tab="implementation"
+                        aria-selected="true">
+                    Implementation
+                </button>
+
+                <button class="main-tab"
+                        type="button"
+                        data-tab="theory"
+                        aria-selected="false">
+                    Theory Answers
+                </button>
+            </div>
+
+
+            <div class="tab-content">
+
+                <div id="tab-implementation" class="tab-panel">
+
+                    <section>
+                        <h2>Implementation</h2>
+
+                        <p>
+                            For the practical part of this assignment, this webpage was deployed using CSC Rahti. The images used on the page are stored separately in CSC Allas object storage.
+                            The source code is stored in <a href="https://github.com/mpomahac25/cloud-services-assignment-3">GitHub</a> and used as the source for the Rahti deployment.
+                        </p>
+                    </section>
+
+
+                    <section>
+                        <h2>1. CSC Project Services</h2>
+
+                        <figure>
+                            <img src="https://a3s.fi/swift/v1/assignment-3-media/CSC_Console.png"
+                                 alt="CSC project showing Rahti and Allas services">
+
+                            <figcaption>
+                                Rahti and Allas were enabled for the CSC project. Rahti is used to host the webpage, while Allas is used for storing the media files separately. The above image
+                                shows the "SERVICES" and "RESOURCES" sections of the CSC Dashboard for the project being used in this course's assignments.
+                            </figcaption>
+                        </figure>
+                    </section>
+
+
+                    <section>
+                        <h2>2. Allas Bucket</h2>
+
+                        <figure>
+                            <img src="https://a3s.fi/swift/v1/assignment-3-media/Allas_buckets.png"
+                                 alt="Allas bucket created">
+
+                            <figcaption>
+                                A bucket was created in Allas for storing the screenshots used on this webpage. This is done by clicking the "Create bucket" button in the view shown in this image. This
+                                gives a pop-up in which we can set the name for the bucket and optionally add tags to it.
+                                <br />
+                                The files are made publicly accessible so they can be loaded directly by the webpage, which is done by clicking the checkbox seen next to "Link" in the above screeenshot
+                                (initially it says "Disabled" until the checkbox is clicked).
+                            </figcaption>
+                        </figure>
+                    </section>
+
+
+                    <section>
+                        <h2>3. Allas Bucket Images</h2>
+
+                        <figure>
+                            <img src="https://a3s.fi/swift/v1/assignment-3-media/Allas_images.png"
+                                 alt="Allas bucket containing assignment media">
+
+                            <figcaption>
+                                The bucket contains all of the images related to the assignment, each with a descriptive filename. Uploading the files is done by clicking the "Upload" button, then either
+                                drag-and-dropping the images and/or folders from the desktop to the drop area of the displayed pop-up, or clicking the "Select objects" button and selecting the files from
+                                the newly-opened file selector window.
+                            </figcaption>
+                        </figure>
+                    </section>
+
+
+                    <section>
+                        <h2>4. Using Media from Allas</h2>
+
+                        <figure>
+                            <img src="https://a3s.fi/swift/v1/assignment-3-media/Loading_images_from_Allas.png"
+                                 alt="Source code showing an image being loaded from Allas">
+
+                            <figcaption>
+                                The webpage loads its images using public URLs pointing to files stored in Allas, instead of storing the images together with the webpage in Rahti. The above image shows an
+                                example from the HTML file of this webpage.
+                            </figcaption>
+                        </figure>
+                    </section>
+
+
+                    <section>
+                        <h2>GitHub Repository</h2>
+
+                        <p>
+                            The source code for this assignment can be found here:
+                            <a href="https://github.com/mpomahac25/cloud-services-assignment-3">
+                                GitHub repository
+                            </a>
+                        </p>
+                    </section>
+
+                </div>
+
+
+                <div id="tab-theory" class="tab-panel hidden">
+
+                    <section>
+                        <h2>1. Why are so many companies using cloud-based email and calendar services?</h2>
+
+                        <p>
+                            One of the biggest reasons is that using a cloud-based email and calendar service, such as Microsoft's Outlook, is that they require almost no maintenance compared to hosting those
+                            services locally. This means that things like server maintenance, installing updates, providing core security features, and ensuring redundancy is being handled by the provider of
+                            these services.
+                        </p>
+
+                        <p>
+                            Another advantage is scalability. If the company recruits a lot of new people, they usually just need to create an account for them and set any permission levels (if applicable). Any
+                            other system-related things, such as expanding the amount of resources available for handling the email traffic and accounts, is once again handled by the provider of the service.
+                        </p>
+
+                        <p>
+                            And a third advantage is convenience. A cloud-based service ensures that employees are able to access their emails and calendars from anywhere as long as they have an internet connection,
+                            without such a setup requiring the IT department of the company to do a long and complex setup to ensure the same level of access and security themselves.
+                        </p>
+                    </section>
+
+
+                    <section>
+                        <h2>2. When should you maintain your own web server and when should you use SaaS, PaaS or IaaS?</h2>
+
+                        <p>
+                            Maintaining your own server makes sense in specific cases, such as when you want to have a high level of control over the hardware, OS, or network, or when there are potential security
+                            requirements or goals with doing so. Another possible reason to use your own server instead of a cloud service is if the costs of the hardware and electricity end up being lower over time
+                            than the cost of the cloud service.
+                        </p>
+
+                        <p>
+                            However, if none of the above are the case, it almost always means that it would make more sense to use a cloud service, with the specific type depending on the required level of control
+                            you want or need over the whole system.
+                        </p>
+                    </section>
+
+
+                    <section>
+                        <h2>3. Public DNS resolvers vs. ISP DNS resolvers</h2>
+
+                        <p>
+                            A public DNS resolver often provides better performance, security, and reliability than some ISP-provided DNS services. However, this can sometimes cause an issue with services which use
+                            DNS to choose the closes CDN location. Normally, a CDN tries to direct the user to a nearby "edge server" which stores cached copies of websites. But if the CDN is being determined based on
+                            the DNS resolver's location, and that DNS resolver is geographically far away from the user, the selected edge server might not be close to the user. This can introduce increased latency or
+                            even request timeouts in extreme cases.
+                        </p>
+                        
+                        <p>
+                            With an ISP-provided DNS service, the geographical distance is usually relatively short, making the above scenario far less likely. However, an ISP-provided DNS service can have its own
+                            disadvantages, such as potentially weaker or inconsistent security level, reliability and performance issues, and filtering of certain DNS responses (effectively blocking certain websites).
+                        </p>
+                    </section>
+
+
+                    <section>
+                        <h2>4. Why do many IoT devices use public DNS resolvers?</h2>
+
+                        <p>
+                            Public DNS resolvers are more likely to be reliable, which is going to be attractive to many manufacturers of IoT devices. This greatly reduces the risk of their products not working due to
+                            an unreliable DNS server being used by the local network's router.
+                        </p>
+                        <p>
+                            However, depending on the configuration of the network policies, access to external DNS servers might be blocked by the local network, which would again lead to the same issue. In addition,
+                            using a public DNS takes control away from the network administrator and creates a potential vulnerability if the device is ever compromised, as any DNS filtering configured in the DNS server
+                            used by the local network's router will be bypassed by the IoT device using a public DNS server.
+                        </p>
+                        <p>
+                            Due to the risks assoicated with using a public DNS resolver in IoT devices, it's actually recommended by IETF to use the DNS resolver provided by the local network instead of depending on
+                            public resolvers for IoT devices.
+                        </p>
+                    </section>
+
+                </div>
+
+            </div>
+
+        </main>
+
+
+        <footer>
+            <p>Thank you for reading :)</p>
+        </footer>
+
+        <script src="index.js"></script>
+
+    </body>
+</html>
